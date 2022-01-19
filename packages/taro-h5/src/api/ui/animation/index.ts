@@ -10,7 +10,7 @@ class StyleSheet {
   }
 
   $style: HTMLStyleElement
-  sheet?: CSSStyleSheet | null
+  sheet?: CSSStyleSheet | null = null
   appendStyleSheet = () => {
     this.$style?.setAttribute('type', 'text/css')
     this.$style?.setAttribute('data-type', 'Taro')
